@@ -1,0 +1,25 @@
+Please respond thoroughly (at least two sentences for each question) to
+the following three questions.
+
+1. Describe an experience you had this semester where you saw the power of
+functions.
+
+Every time I was able to call a function multiple times it gave me a 
+really good visual of how powerful functions are. Especially when it
+comes to time saving.
+
+2. In your judgment, what is the value of test functions?
+
+Test functions are super useful when I would normally need to type
+something out to test something over and over again. It was also 
+really nice when I was testing them for things that involved more
+difficult math.
+
+3. Describe your process for troubleshooting and fixing a program that
+has a problem. What is one thing you can do to improve your process?
+
+When I had troubles with a problem, I usually start by trying to find a
+program from the examples or something similar I'd already written to
+use as a stencil. Then I'd google it so I get a more general answer. 
+Then I'd ask an AI what was wrong and ask it to explain why what I had
+done was wrong.

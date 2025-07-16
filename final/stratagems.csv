@@ -1,33 +1,42 @@
-Type,Stratagem Name
-Support,Guard Dog Rover
-Support,Guard Dog
-Support,Jump Pack
-Support,Eagle Smoke Strike
-Support,Orbital Smoke Strike
-Defense,Shield Generator Pack
-Defense,EMS Mortar Sentry
-Defense,Tesla Tower
-Defense,Rocket Sentry
-Defense,Autocannon Sentry
-Defense,Ballistic Shield Backpack
-Defense,HMG Emplacement
-Defense,Shield Generator Relay
-Defense,Incendiary Mines
-Defense,Mortar Sentry
-Offense,Patriot Exosuit
-Offense,Railgun
-Offense,Spear
-Offense,Orbital Railcannon Strike
-Offense,Quasar Cannon
-Offense,Orbital Laser
-Offense,Eagle 500KG Bomb
-Offense,ARC Thrower
-Offense,Heavy Machine Gun
-Offense,Flamethrower
-Offense,Autocannon
-Offense,Orbital Walking Barrage
-Offense,Eagle 110MM Rocket Pods
-Offense,Orbital 380MM HE Barrage
-Offense,Recoilless Rifle
-Offense,Orbital Airburst Strike
-Offense,Orbital 120MM HE Barrage
+Stratagem Name,Type
+Orbital Gatling Barrage,Offense
+Orbital Precision Strike,Offense
+Orbital Airburst Strike,Offense
+Orbital 120MM HE Barrage,Offense
+Orbital 380MM HE Barrage,Offense
+Orbital Walking Barrage,Offense
+Orbital Laser,Offense
+Orbital Railcannon Strike,Offense
+Eagle Strafing Run,Offense
+Eagle Airstrike,Offense
+Eagle Cluster Bomb,Offense
+Eagle Napalm Airstrike,Offense
+Eagle Smoke Strike,Offense
+Eagle 110MM Rocket Pods,Offense
+Eagle 500KG Bomb,Offense
+Machine Gun Sentry,Defense
+Gatling Sentry,Defense
+Mortar Sentry,Defense
+Guard Dog Rover,Defense
+Autocannon Sentry,Defense
+Rocket Sentry,Defense
+EMS Mortar Sentry,Defense
+Shield Generator Relay,Defense
+Tesla Tower,Defense
+Anti-Personnel Minefield,Defense
+Incendiary Mines,Defense
+Machine Gun,Support
+Anti-Materiel Rifle,Support
+Stalwart,Support
+Expendable Anti-Tank,Support
+Recoilless Rifle,Support
+Flamethrower,Support
+Autocannon,Support
+Railgun,Support
+Spear,Support
+Laser Cannon,Support
+Arc Thrower,Support
+Quasar Cannon,Support
+Grenade Launcher,Support
+Patriot Exosuit,Support
+Emancipator Exosuit,Support
