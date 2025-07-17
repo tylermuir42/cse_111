@@ -54,33 +54,65 @@ def display_menu():
 def log_mission():
     """Stores other information to write 
         to missions.csv"""
+    
+    #Gets the current date and time
+    #and uses it for the key value
     date = datetime.now().strftime("%m/%d/%Y %H:%M")
-    difficulty = int(input("Enter the difficulty (1-10): "))
-    enemy = input("Enter enemy type. 'a' for automatons, 't' for terminids, 'i' for illuminate: ")
-    result = input("Did you win? (y/n): ")
 
-    #Change enemy input to match the csv file
-    if enemy.lower() == "a":
-        enemy = "Bots"
-    elif enemy.lower() == "t":
-        enemy = "Bugs"
-    else:
-        enemy = "Squids"
+    #Check that the difficulty is an integer
+    while True: 
+        try:
+            difficulty = int(input("Enter the difficulty (1-10): "))
+            break
+        except ValueError as val_err:
+            # This code will be executed if the user enters
+            # an invalid integer for the line number.
+            print("Invalid input. Please enter a whole number")
 
-    #Change result input to match the csv file
-    if result.lower() == "y":
-        result = "Win"
-    else:
-        result = "Lose"
+    #Check that the enemy input is correct
+    while True:
+        enemy = input("Enter enemy type. 'a' for automatons, 't' for terminids, 'i' for illuminate: ").lower()
 
+        #Change enemy input to match the csv file
+        #and check to make sure it's correct
+        if enemy.lower() == "a":
+            enemy = "Bots"
+            break
+        elif enemy.lower() == "t":
+            enemy = "Bugs"
+            break
+        elif enemy.lower() == 'i':
+            enemy = "Squids"
+            break
+        else:
+            print("You entered an invalid letter for the enemy type.")
+            print("Run the program again and enter an 'a', 't', or 'i'")
+
+
+    while True: 
+        result = input("Did you win? (y/n): ")
+
+        #Change result input to match the csv file
+        if result.lower() == "y":
+            result = "Win"
+            break
+        elif result.lower() == "n":
+            result = "Lose"
+            break
+        else:
+            print("Invalid input. Please enter 'y' or 'n'")
+
+    #Log all the inputs to the csv file
     with open("mission_log.csv", mode="a", newline="") as file:
         writer = csv.writer(file)
         writer.writerow([date, difficulty, enemy, result])
 
     print("Mission logged successfully.")
 
+
 def show_mission_log():
     """Displays the mission log from the csv file
+    and prints to the terminal
     """
     mission_dict = read_log("mission_log.csv", DATE_INDEX)
 
@@ -103,6 +135,7 @@ def show_mission_log():
 
 def calculate_success_rate():
     """Calculates the success rate of all missions
+    and prints to the terminal
     """
     log = read_log("mission_log.csv", DATE_INDEX)
 
@@ -127,6 +160,7 @@ def calculate_success_rate():
 
 def random_stratagem_loadout():
     """Crates a random stratagem loadout
+    and prints to the terminal
     """
     stratagems_dict = read_log("stratagems.csv", 0)
     strats = random.sample(list(stratagems_dict.items()), 4)
